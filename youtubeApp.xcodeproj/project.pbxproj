@@ -13,6 +13,13 @@
 		2B50CD95282D0247001BFE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B50CD93282D0247001BFE31 /* Main.storyboard */; };
 		2B50CD97282D0248001BFE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B50CD96282D0248001BFE31 /* Assets.xcassets */; };
 		2B50CD9A282D0248001BFE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B50CD98282D0248001BFE31 /* LaunchScreen.storyboard */; };
+		2B50CDA2282D3866001BFE31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B50CDA1282D3866001BFE31 /* Constants.swift */; };
+		2B50CDA4282D425A001BFE31 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B50CDA3282D425A001BFE31 /* Video.swift */; };
+		2B50CDA6282D440D001BFE31 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B50CDA5282D440D001BFE31 /* Model.swift */; };
+		2B50CDA8282DF3B5001BFE31 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B50CDA7282DF3B5001BFE31 /* Response.swift */; };
+		2B914BBB282E61E70081B30A /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B914BBA282E61E70081B30A /* VideoTableViewCell.swift */; };
+		2B914BBD28323B760081B30A /* CahceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B914BBC28323B760081B30A /* CahceManager.swift */; };
+		2BAF51A728334CA800BFC753 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAF51A628334CA800BFC753 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		2B50CD96282D0248001BFE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B50CD99282D0248001BFE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B50CD9B282D0248001BFE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B50CDA1282D3866001BFE31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B50CDA3282D425A001BFE31 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		2B50CDA5282D440D001BFE31 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2B50CDA7282DF3B5001BFE31 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		2B914BBA282E61E70081B30A /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		2B914BBC28323B760081B30A /* CahceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CahceManager.swift; sourceTree = "<group>"; };
+		2BAF51A628334CA800BFC753 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,60 @@
 			children = (
 				2B50CD8D282D0246001BFE31 /* AppDelegate.swift */,
 				2B50CD8F282D0246001BFE31 /* SceneDelegate.swift */,
-				2B50CD91282D0247001BFE31 /* ViewController.swift */,
-				2B50CD93282D0247001BFE31 /* Main.storyboard */,
+				2B50CDB0282E4D95001BFE31 /* Helpers */,
+				2B50CDAF282E4D77001BFE31 /* Storyboards */,
+				2B50CDAE282E4D65001BFE31 /* Models */,
+				2B50CDAD282E4D3A001BFE31 /* View Controllers */,
+				2B50CDAB282E4CF8001BFE31 /* Views */,
 				2B50CD96282D0248001BFE31 /* Assets.xcassets */,
-				2B50CD98282D0248001BFE31 /* LaunchScreen.storyboard */,
 				2B50CD9B282D0248001BFE31 /* Info.plist */,
 			);
 			path = youtubeApp;
+			sourceTree = "<group>";
+		};
+		2B50CDAB282E4CF8001BFE31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B914BBA282E61E70081B30A /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B50CDAD282E4D3A001BFE31 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B50CD91282D0247001BFE31 /* ViewController.swift */,
+				2BAF51A628334CA800BFC753 /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2B50CDAE282E4D65001BFE31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B50CDA3282D425A001BFE31 /* Video.swift */,
+				2B50CDA5282D440D001BFE31 /* Model.swift */,
+				2B50CDA7282DF3B5001BFE31 /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B50CDAF282E4D77001BFE31 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2B50CD93282D0247001BFE31 /* Main.storyboard */,
+				2B50CD98282D0248001BFE31 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2B50CDB0282E4D95001BFE31 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2B50CDA1282D3866001BFE31 /* Constants.swift */,
+				2B914BBC28323B760081B30A /* CahceManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +201,14 @@
 			files = (
 				2B50CD92282D0247001BFE31 /* ViewController.swift in Sources */,
 				2B50CD8E282D0246001BFE31 /* AppDelegate.swift in Sources */,
+				2B914BBD28323B760081B30A /* CahceManager.swift in Sources */,
 				2B50CD90282D0246001BFE31 /* SceneDelegate.swift in Sources */,
+				2B50CDA6282D440D001BFE31 /* Model.swift in Sources */,
+				2B50CDA2282D3866001BFE31 /* Constants.swift in Sources */,
+				2B914BBB282E61E70081B30A /* VideoTableViewCell.swift in Sources */,
+				2BAF51A728334CA800BFC753 /* DetailViewController.swift in Sources */,
+				2B50CDA4282D425A001BFE31 /* Video.swift in Sources */,
+				2B50CDA8282DF3B5001BFE31 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
